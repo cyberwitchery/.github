@@ -5,11 +5,12 @@ any of it, i want to hear about it.
 
 ## reporting
 
-email contact@cyberwitchery.com. tell me what you found and, where you can, how to
-reproduce it. if a repo has github’s private vulnerability reporting turned on, its
-security tab works too.
+use github’s private vulnerability reporting: open the repo’s security tab and file
+it there. it’s on for every public repo and should be your default. only fall back
+to email at contact@cyberwitchery.com if reporting isn’t available.
 
-please don’t open a public issue for a security bug.
+either way, tell me what you found and, where you can, how to reproduce it. please
+don’t open a public issue for a security bug.
 
 ## what happens next
 
