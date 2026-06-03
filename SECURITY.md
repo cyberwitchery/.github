@@ -18,6 +18,11 @@ i’ll acknowledge your report, work through it with you, and keep you posted wh
 fix is in flight. all i ask is a reasonable window to sort it out before anything
 goes public.
 
+## no bounty
+
+these are free, unfunded oss tools, so there’s no bug bounty and no money on offer.
+i’ll gladly credit you in the advisory if you’d like.
+
 ## scope
 
 every repo under the cyberwitchery org.
