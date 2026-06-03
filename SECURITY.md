@@ -1,23 +1,22 @@
-# Security Policy
+# security policy
 
-Cyber Witchery Lab maintains security and networking tooling. We appreciate
-reports of vulnerabilities in any of our projects and aim to acknowledge them
-promptly.
+cyber witchery lab builds security and networking tooling. if you find a hole in
+any of it, i want to hear about it.
 
-## Reporting a vulnerability
+## reporting
 
-Email contact@cyberwitchery.com with a description of the issue and, where
-possible, steps to reproduce. If a repository has GitHub private vulnerability
-reporting enabled, you can also report through that repository's Security tab.
+email contact@cyberwitchery.com. tell me what you found and, where you can, how to
+reproduce it. if a repo has github’s private vulnerability reporting turned on, its
+security tab works too.
 
-Please do not open public issues for security problems.
+please don’t open a public issue for a security bug.
 
-## What to expect
+## what happens next
 
-We will acknowledge your report, work with you to validate the issue, and keep
-you informed as we develop a fix. We ask that you give us a reasonable amount of
-time to address the problem before any public disclosure.
+i’ll acknowledge your report, work through it with you, and keep you posted while a
+fix is in flight. all i ask is a reasonable window to sort it out before anything
+goes public.
 
-## Scope
+## scope
 
-This policy applies to all repositories under the cyberwitchery organization.
+every repo under the cyberwitchery org.
