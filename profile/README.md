@@ -14,7 +14,7 @@ our work spans network automation, software assurance, programming languages, an
 
 ##### software assurance
 
-<!--* [divinate](https://github.com/cyberwitchery/sbom-diff): durable, inspectable evidence for security and compliance claims-->
+ [divinate](https://github.com/cyberwitchery/sbom-diff): durable, inspectable evidence for security and compliance claims
 * [sbom-diff](https://github.com/cyberwitchery/sbom-diff): structural comparison of software bills of materials
 * [unsafe-budget](https://github.com/cyberwitchery/unsafe-budget): explicit budgets for unsafe Rust
 * small security tools designed to compose with existing development workflows
