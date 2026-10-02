@@ -1,28 +1,35 @@
 # security policy
 
-cyber witchery lab builds security and networking tooling. if you find a hole in
-any of it, i want to hear about it.
+cyberwitchery builds security and networking tooling. if you find a hole in any
+of it, we want to hear about it.
 
 ## reporting
 
-use github’s private vulnerability reporting: open the repo’s security tab and file
-it there. it’s on for every public repo and should be your default. only fall back
-to email at contact@cyberwitchery.com if reporting isn’t available.
+for a public repo, use github’s private vulnerability reporting: open the repo’s
+security tab and file it there. it’s on for every public repo in the org.
 
-either way, tell me what you found and, where you can, how to reproduce it. please
-don’t open a public issue for a security bug.
+for our commercial products, or anything you can’t reach on github, email
+contact@cyberwitchery.com.
+
+either way, tell us what you found and, where you can, how to reproduce it.
+please don’t open a public issue for a security bug.
 
 ## what happens next
 
-i’ll acknowledge your report, work through it with you, and keep you posted while a
-fix is in flight. all i ask is a reasonable window to sort it out before anything
-goes public.
+we acknowledge every report within 5 business days, work through it with you,
+and keep you posted while a fix is in flight. we ask for 60 days from your report
+before anything goes public, and publish an advisory once the fix ships.
+
+## supported versions
+
+we fix security bugs in the latest release. older releases don’t get backports.
 
 ## no bounty
 
-these are free, unfunded oss tools, so there’s no bug bounty and no money on offer.
-i’ll gladly credit you in the advisory if you’d like.
+there’s no bug bounty and no money on offer. we’ll gladly credit you in the
+advisory if you’d like.
 
 ## scope
 
-every repo under the cyberwitchery org.
+every repo under the cyberwitchery org, and our commercial products. forks of
+other projects are out of scope: report those upstream.
