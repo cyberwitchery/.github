@@ -1,0 +1,53 @@
+name: attest
+
+# attests provenance and sbom for each package in the `release-evidence`
+# artifact that sbom.yml uploads in release mode. call it after sbom.yml:
+#
+#   attest:
+#     needs: sbom
+#     uses: cyberwitchery/.github/.github/workflows/attest.yml@<sha>
+#     permissions: { contents: read, id-token: write, attestations: write }
+#     with:
+#       names: ${{ needs.sbom.outputs.names }}
+
+on:
+  workflow_call:
+    inputs:
+      names:
+        description: json list of package names, sbom.yml's `names` output
+        type: string
+        required: true
+
+permissions: {}
+
+jobs:
+  attest:
+    name: attest ${{ matrix.name }}
+    if: inputs.names != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    strategy:
+      fail-fast: false
+      matrix:
+        name: ${{ fromJSON(inputs.names) }}
+    steps:
+      - name: download
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: release-evidence
+          path: evidence
+
+      - name: attest provenance
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: evidence/packages/${{ matrix.name }}/*
+
+      - name: attest sbom
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: evidence/packages/${{ matrix.name }}/*
+          sbom-path: evidence/sbom/${{ matrix.name }}.cdx.json
